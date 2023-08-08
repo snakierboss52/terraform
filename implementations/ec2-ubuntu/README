@@ -1,0 +1,19 @@
+# Terraform EC2 Instance
+
+This Terraform configuration sets up an EC2 instance in an AWS environment. Follow the instructions below to customize the instance settings and launch it.
+
+## Prerequisites
+
+1. **Install Terraform:** Follow the official [Terraform installation guide](https://learn.hashicorp.com/tutorials/terraform/install-cli) to install Terraform on your system.
+
+2. **AWS Credentials:** Make sure you have your AWS credentials configured. You can set them up using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) or environment variables.
+
+## Configuration
+
+1. **Clone this repository:**
+
+2. **Replace variables file with your respective values**
+
+3. **Initialize your backend using terraform init**
+
+4. **Use terraform plan to verify your resources later do terraform apply**

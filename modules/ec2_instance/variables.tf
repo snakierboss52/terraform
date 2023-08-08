@@ -18,7 +18,7 @@ variable "environment" {
     type        = string
 }
 
-variable "vpc_security_groups_ids" {
+variable "vpc_security_group_ids" {
     description = "A list of security groups IDs to associate the ec2 instance"
     type        = list
 }
