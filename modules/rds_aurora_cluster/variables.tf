@@ -54,3 +54,15 @@ variable "preferred_backup_window" {
   description = "Backup window schedule"
   default     = "07:00-09:00"
 }
+
+variable "allow_major_version_upgrade" {
+  type        = bool
+  description = "Flag to allow major version upgrades"
+  default     = false
+}
+
+variable "deletion_protection" {
+  type        = bool
+  description = "If the DB instance should have deletion protection enabled. The database can't be deleted when this value is set to True"
+  default     = true
+}
