@@ -1,10 +1,10 @@
 variable "ami" {
   description = "Ubuntu ami 22.04"
-  default = "ami-02f3416038bdb17fb"
+  default = "ami-0fc5d935ebf8bc3bc"
 }
 
 variable "instance_type" {
-  default = "t3a.micro"
+  default = "t2.micro"
 }
 
 variable "environment" {
@@ -16,23 +16,20 @@ variable "ec2_name" {
 }
 
 variable "subnet_id" {
-  default = "subnet-002d2e50b654b785d"
+  default = "subnet-01337e6e80b2f251b"
 }
 
 variable "key_name" {
-  default = "ec2-fleet-spot"
+  default = "dev"
 }
 
 variable "region" {
-  default = "us-east-2"
+  default = "us-east-1"
 }
 
 variable "vpc_security_group_ids" {
   default = [
-        "sg-071ddb6e180403d6d",
-        "sg-008147fcd4cb59119",
-        "sg-0592297a0ed925cd8", 
-        "sg-08e853b10d043026b", 
-        "sg-0275f8a92f9de6f39"
+        "sg-07a2ba9eb5a6d5201",
+        "sg-0bfb50f005ec16018"
     ]
 }
