@@ -1,4 +1,8 @@
-resource "aws_kms_key" "a" {
-  description             = "KMS key test"
-  deletion_window_in_days = 2
+module "kms_key" {
+
+    source = "../../modules/kms_key"
+
+    alias =  var.alias
+    description = var.description
+    deletion_window_in_days = var.deletion_window_in_days
 }
